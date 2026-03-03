@@ -1,4 +1,5 @@
 ---
+import ASCII from "../components/Banner.jsx";
 import Navbar from "../components/Navbar.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import Floor from "../components/Floor.astro";
@@ -14,14 +15,16 @@ const { pathname } = Astro.url;
   <TerminalPanel>
     <HeadCmd pathname={pathname} client:load />
     <div class="body-cmd gap-2">
-      <div class="flex gap-3">
+      <!-- ASCII art -->
+      <ASCII />
+      <!-- <div class="flex gap-3">
         <span class="text-accent-purple text-lg font-bold">name</span>
         <h1 class="text-lg text-main font-bold">Harindra Wahyu Arifudin</h1>
       </div>
       <div class="flex gap-3">
         <span class="text-accent-blue text-lg font-bold">role</span>
         <p class="text-lg text-main font-bold">Full Stack Web Developer.</p>
-      </div>
+      </div> -->
     </div>
   </TerminalPanel>
 </MainLayout>

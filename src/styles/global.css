@@ -115,3 +115,8 @@ body {
 .hover-muted {
   color: var(--hover-muted);
 }   
+
+
+.kaiden {
+  color: var(--text-main);
+}
