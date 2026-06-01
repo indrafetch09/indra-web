@@ -3,7 +3,6 @@ import { Image } from "astro:assets";
 import Navbar from "../components/Navbar.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import Footer from "../components/Footer.astro";
-import Floor from "../components/Floor.astro";
 import TerminalPanel from "../components/TerminalPanel.astro";
 import profileImg from "./public/assets/Indra.webp";
 import HeadCmd from "../components/HeadCmd";
@@ -13,7 +12,6 @@ const { pathname } = Astro.url;
 
 <MainLayout title="About | Harindra Wahyu" , description="This is resume page">
   <Navbar />
-  <Floor />
   <TerminalPanel>
     <HeadCmd pathname={pathname} client:load />
   </TerminalPanel>

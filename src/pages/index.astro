@@ -2,7 +2,6 @@
 import ASCII from "../components/Banner.jsx";
 import Navbar from "../components/Navbar.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import Floor from "../components/Floor.astro";
 import TerminalPanel from "../components/TerminalPanel.astro";
 import HeadCmd from "../components/HeadCmd.jsx";
 
@@ -10,7 +9,6 @@ const { pathname } = Astro.url;
 ---
 
 <MainLayout title="Harindra Wahyu" , description="This is home page">
-    <Floor />
     <Navbar />
     <TerminalPanel>
         <HeadCmd pathname={pathname} client:load />
