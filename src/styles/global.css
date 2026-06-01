@@ -6,8 +6,13 @@
     --bg-panel: #232a2d;
     --bg-hover: #2d3437;
 
-    --border-main: #3b4347;
-    --border-active: #6cbfbf;
+    --border-green: #8ccf7eb4;
+    --border-purple: #c47fd5;
+    --border-blue: #67b0e8;
+    --border-tosca: #6cbfbf;
+    --border-yellow: #e5c76b;
+    --border-red: #e57474;
+    --border-muted: #777777;
 
     --hover-muted: #2d3437;
 
@@ -17,12 +22,12 @@
 
     --text-main: #dadada;
 
-    --text-accent-green: #8ccf7e;
-    --text-accent-purple: #c47fd5;
-    --text-accent-blue: #67b0e8;
-    --text-accent-tosca: #6cbfbf;
-    --text-accent-yellow: #e5c76b;
-    --text-accent-red: #e57474;
+    --text-green: #8ccf7e;
+    --text-purple: #c47fd5;
+    --text-blue: #67b0e8;
+    --text-tosca: #6cbfbf;
+    --text-yellow: #e5c76b;
+    --text-red: #e57474;
     --text-muted: #777777;
 }
 
@@ -68,12 +73,32 @@ body {
 }
 
 /* Border color classes */
-.border-main {
-    border-color: var(--border-main);
+.border-green {
+    border-color: var(--border-green);
 }
 
-.border-active {
-    border-color: var(--border-active);
+.border-purple {
+    border-color: var(--border-purple);
+}
+
+.border-blue {
+    border-color: var(--border-blue);
+}
+
+.border-tosca {
+    border-color: var(--border-tosca);
+}
+
+.border-yellow {
+    border-color: var(--border-yellow);
+}
+
+.border-red {
+    border-color: var(--border-red);
+}
+
+.border-muted {
+    border-color: var(--border-muted);
 }
 
 /* Text color classes */
@@ -81,24 +106,24 @@ body {
     color: var(--text-main);
 }
 
-.text-accent-green {
-    color: var(--text-accent-green);
+.text-green {
+    color: var(--text-green);
 }
 
-.text-accent-purple {
-    color: var(--text-accent-purple);
+.text-purple {
+    color: var(--text-purple);
 }
 
-.text-accent-blue {
-    color: var(--text-accent-blue);
+.text-blue {
+    color: var(--text-blue);
 }
 
-.text-accent-tosca {
-    color: var(--text-accent-tosca);
+.text-tosca {
+    color: var(--text-tosca);
 }
 
-.text-accent-yellow {
-    color: var(--text-accent-yellow);
+.text-yellow {
+    color: var(--text-yellow);
 }
 
 .text-accent-red {
@@ -125,6 +150,89 @@ body {
 /* Hover muted class */
 .hover-muted {
     color: var(--hover-muted);
+}
+
+/* Background accent colors */
+.bg-green {
+    background-color: var(--text-green);
+}
+
+.bg-purple {
+    background-color: var(--text-purple);
+}
+
+.bg-blue {
+    background-color: var(--text-blue);
+}
+
+.bg-tosca {
+    background-color: var(--text-tosca);
+}
+
+.bg-yellow {
+    background-color: var(--text-yellow);
+}
+
+.bg-red {
+    background-color: var(--text-accent-red);
+}
+
+/* Text with bg colors */
+.text-bg-main {
+    color: var(--bg-main);
+}
+
+/* Border with opacity */
+.border-muted\/50 {
+    border-color: color-mix(in srgb, var(--border-muted) 50%, transparent);
+}
+
+/* Background with opacity */
+.bg-panel\/40 {
+    background-color: color-mix(in srgb, var(--bg-panel) 40%, transparent);
+}
+
+.bg-panel\/60 {
+    background-color: color-mix(in srgb, var(--bg-panel) 60%, transparent);
+}
+
+/* Hover text states */
+.hover\:text-green:hover {
+    color: var(--text-green);
+}
+
+.hover\:text-purple:hover {
+    color: var(--text-purple);
+}
+
+.hover\:text-blue:hover {
+    color: var(--text-blue);
+}
+
+.hover\:text-tosca:hover {
+    color: var(--text-tosca);
+}
+
+.hover\:text-yellow:hover {
+    color: var(--text-yellow);
+}
+
+.hover\:text-red:hover {
+    color: var(--text-accent-red);
+}
+
+/* Hover background states */
+.hover\:bg-panel:hover {
+    background-color: var(--bg-panel);
+}
+
+.hover\:bg-hover:hover {
+    background-color: var(--bg-hover);
+}
+
+/* After pseudo-element background */
+.after\:bg-green::after {
+    background-color: var(--text-green);
 }
 
 .ascii-art {
